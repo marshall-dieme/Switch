@@ -1,0 +1,139 @@
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: crimson;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container .sec {
+    margin-right: 30px;
+}
+
+footer .container .sec.about {
+    width: 40%;
+}
+
+footer h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+
+footer h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: blue;
+}
+
+footer p {
+    color: #ddd;
+}
+
+.links {
+    position: relative;
+    width: 25%;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    color: #fff;
+}
+
+footer .container .sec.links ul li a{
+    color: #ddd;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.links ul li a:hover {
+    color: #fff;
+}
+
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact ul {
+    position: relative;
+}
+
+.contact ul li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact ul li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact ul li span {
+    color: #ddd;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.contact ul li a:hover {
+    color: #fff;
+}
+
+.copyrights {
+    width: 100%;
+    background: rgb(136, 9, 34);
+    color: #fff;
+    padding: 8px 100px;
+    text-align: center;
+}
+
+@media (max-width : 991px) {
+    footer {
+        padding: 40px;
+    }
+
+    footer .container {
+        flex-direction: column;
+    }
+
+    footer .container .sec {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    footer .container .sec {
+        width: 100%;
+    }
+
+    footer .container .sec.about {
+        width: 100%;
+    }
+
+    .copyrights {
+        padding: 8px 40px;
+    }
+}
