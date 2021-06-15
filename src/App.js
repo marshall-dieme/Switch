@@ -16,6 +16,7 @@ export default class App extends Component {
     return (
       <Router>
         <NavBar />
+        <br /><br />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/services" exact component={Service} />

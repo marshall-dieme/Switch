@@ -1,0 +1,45 @@
+.service-section {
+    position: relative;
+    z-index: 10;
+}
+
+.main-section {
+    padding: 0 100px;
+}
+
+.section-title {
+    position: relative;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.section-title h2::before {
+    content:' ';
+    display:block;
+    position:absolute; 
+    top:50%; 
+    left: 0;
+    width:40%; /* 100px line on either side */
+    border-bottom:1px solid #333;
+}
+
+.section-title h2::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 40%;
+    border-bottom: 1px solid #333;
+}
+
+@media (max-width:991px) {
+    .section-title h2::before,
+    .section-title h2::after {
+        display: none;
+    }
+}

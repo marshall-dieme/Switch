@@ -4,17 +4,31 @@ header {
 	left: 0;
 	padding: 0 50px;
 	width: 100%;
-	background: #301542;
+	height: 60px;
+	background: #fff;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
 }
 
 header .logo {
-	height: 50px;
+	height: 60px;
 	width: 200px;
 	float: left;
 }
 
+header .logo a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 800;
+	color: #5f0a87;
+}
+
 header .logo a img {
-	width: 90%;
+	width: 100%;
 }
 
 header nav {
@@ -32,10 +46,10 @@ header nav ul li {
 }
 
 header nav ul li a {
-	height: 50px;
+	height: 60px;
 	line-height: 50px;
 	padding: 0 20px;
-	color: #fff;
+	color: slateblue;
 	text-decoration: none;
 	display: block;
 	transition: .3s;
@@ -49,22 +63,32 @@ header nav ul li a.active {
 }
 
 .toggle-menu {
-	color: #fff;
-	float: right;
+	color: #000;
 	line-height: 50px;
-	font-size: 24px;
+	font-size: 28px;
 	cursor: pointer;
 	display: none;
+	position: absolute;
+	right: 20px;
+	top: 10px;
 }
 
 @media (max-width:991px) {
+	
 
 	header .logo {
-		width: 175px;
+		width: 130px;
+	}
+
+	header .logo a img {
+		width: 190px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	header {
-		padding: 0 20px 0 5px;
+		padding: 0 30px;
 	}
 
 	header nav {
@@ -72,10 +96,10 @@ header nav ul li a.active {
 		background: #333;
 		width: 100%;
 		height: calc(100vh - 50px);
-		top: 50px;
+		top: 60px;
 		right: -100%;
 		transition: .5s;
-		z-index: 1;
+		z-index: 5;
 	}
 
 	header nav.active {

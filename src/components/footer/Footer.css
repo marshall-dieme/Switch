@@ -3,7 +3,7 @@ footer {
     width: 100%;
     height: auto;
     padding: 50px 100px;
-    background: crimson;
+    background: linear-gradient(47deg, #3A41C6, #512888);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -39,7 +39,7 @@ footer h2::before {
     left: 0;
     width: 50px;
     height: 2px;
-    background: blue;
+    background: rgb(144, 236, 255);
 }
 
 footer p {
@@ -105,7 +105,7 @@ footer .container .sec.links ul li a{
 
 .copyrights {
     width: 100%;
-    background: rgb(136, 9, 34);
+    background: #222;
     color: #fff;
     padding: 8px 100px;
     text-align: center;

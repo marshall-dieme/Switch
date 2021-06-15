@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 
+
+import './Service.css'
 export default class Service extends Component {
     render() {
         return (
-            <div>
+            <section className="service">
                 Services
-            </div>
+            </section>
         )
     }
 }

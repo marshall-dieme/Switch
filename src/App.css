@@ -11,3 +11,11 @@ body {
 	min-height: 100vh;
 	background: #fff;
 }
+
+section {
+	min-height: 100vh;
+}
+
+section.main-section {
+	padding: 0 100px;
+}
